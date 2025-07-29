@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="main-header">
          <img src="/devantis.jpg" alt="MiApp Logo" className="logo-img" />
-      <div className="logo">🎨 SoftwareLifter</div>
+      <div className="logo"> SoftwareLifter</div>
       <nav className="nav-links">
         <a href="#">Registro de competidores</a>
         <a href="#">Competencias</a>
