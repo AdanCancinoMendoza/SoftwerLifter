@@ -1,21 +1,20 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Nav from './components/Nav'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './App.css';
 
-const App = () => {
+
+function App() {
   return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/acerca" element={<About />} />
-        <Route path="/contacto" element={<Contact />} />
-      </Routes>
-    </Router>
-  )
+    <>
+      <Header />
+      <main style={{ padding: '20px' }}>
+        {/* Aquí irán tus páginas o contenido */}
+        <h1>Bienvenido a MiAppFullstack</h1>
+      </main>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
